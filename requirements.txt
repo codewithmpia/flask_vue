@@ -1,3 +1,7 @@
+build
+click
 Flask
 setuptools
+twine
 wheel
+whine

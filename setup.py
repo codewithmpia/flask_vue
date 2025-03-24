@@ -1,21 +1,26 @@
 from setuptools import setup, find_packages
+import os
 
-# Si vous souhaitez inclure le README, utilisez ceci:
-try:
-    with open("README.md", "r", encoding="utf-8") as fh:
-        long_description = fh.read()
-except FileNotFoundError:
+# Lire le README.md si disponible
+readme_file = "README.md"
+if os.path.exists(readme_file):
+    try:
+        with open(readme_file, "r", encoding="utf-8") as fh:
+            long_description = fh.read()
+    except Exception:
+        long_description = "Flask-Vue - Extension Flask pour intégrer Vue 3, Vite et Tailwind CSS"
+else:
     long_description = "Flask-Vue - Extension Flask pour intégrer Vue 3, Vite et Tailwind CSS"
 
 setup(
-    name="Flask-Vue",
-    version="0.1.0",
+    name="Flask-Vue3",
+    version="0.1.1",
     author="codewithmpia",
-    author_email="email@exemple.com",
+    author_email="codewithmpia@gmail.com",
     description="Extension Flask pour intégrer Vue 3, Vite et Tailwind CSS 4",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/codewithmpia/flask-vue",
+    url="https://github.com/codewithmpia/flask_vue",
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
@@ -40,8 +45,9 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules"
     ],
     python_requires=">=3.7",
+    license="MIT",
     project_urls={
-        "Bug Reports": "https://github.com/codewithmpia/flask-vue/issues",
-        "Source": "https://github.com/codewithmpia/flask-vue",
+        "Bug Reports": "https://github.com/codewithmpia/flask_vue/issues",
+        "Source": "https://github.com/codewithmpia/flask_vue",
     },
 )

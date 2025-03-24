@@ -1,6 +1,6 @@
-# Flask-Vue
+# Flask-Vue3
 
-![Flask-Vue](https://via.placeholder.com/800x200/0077be/ffffff?text=Flask+Vue)
+![Flask-Vue3](https://via.placeholder.com/800x200/0077be/ffffff?text=Flask+Vue)
 
 Une extension Flask pour intégrer facilement Vue 3, Vite.js et Tailwind CSS 4 dans une application Flask, offrant une expérience de développement moderne pour les applications web full-stack.
 
@@ -38,7 +38,7 @@ Une extension Flask pour intégrer facilement Vue 3, Vite.js et Tailwind CSS 4 d
 ## Installation
 
 ```bash
-pip install flask-vue
+pip install flask-vue3
 ```
 
 ## Démarrage rapide
